@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: DidactGothic;
+  src: url(./assets/fonts/DidactGothic.ttf);
+}
+
+@font-face {
+  font-family: WorksSans;
+  src: url(./assets/fonts/WorksSans.ttf);
+}
+
+@font-face {
+  font-family: FjallaOne;
+  src: url(./assets/fonts/FjallaOne.ttf);
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-size: 100px;
+  font-family: DidactGothic;
+  margin-top: 103px;
+  margin-bottom: 60px;
+}
+
+header img {
+  margin-bottom: 118px;
+  height: 1080px;
+}
+
+header span {
+  display: block;
+  font-family: WorksSans;
+
+  font-size: 160px;
+  margin-bottom: 152px;
+}
+
+section {
+  padding: 12vh 18vw;
+
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+
+.orbis {
+  background-image: url(./assets/img/handshake.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.rollr {
+  background-image: url(./assets/img/macbook.png);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.galitos {
+  background-image: url(./assets/img/grillmeat.jpeg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.tretto {
+  background-image: url(./assets/img/phones.png);
+  background-size: contain;
+  background-attachment: fixed;
+}
+
+.dark {
+  min-height: 95vh;
+}
+.bright {
+  min-height: 100vh;
+}
+
+.dark p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: WorksSans;
+  color: #9e9e9e;
+  padding-bottom: 40px;
+}
+
+.bright p {
+  font-size: 20px;
+  font-weight: 400;
+  font-family: WorksSans;
+  color: #666666;
+  padding-bottom: 40px;
+}
+
+.dark h2 {
+  text-shadow: 1px 1px 9px white;
+  font-size: 112px;
+  font-weight: 400;
+  font-family: DidactGothic;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.bright h2 {
+  text-shadow: 1px 1px 9px black;
+  font-size: 112px;
+  font-weight: 400;
+  font-family: DidactGothic;
+  color: black;
+  padding-bottom: 40px;
+}
+
+.dark p:nth-of-type(2) {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: WorksSans;
+  color: #9e9e9e;
+  padding-bottom: 95px;
+}
+
+.bright p:nth-of-type(2) {
+  display: block;
+  font-size: 20px;
+  font-weight: 400;
+  font-family: WorksSans;
+  color: #666666;
+  padding-bottom: 95px;
+}
+
+.dark a {
+  color: white;
+  text-decoration: none;
+  border: 2px solid white;
+  padding: 16px 24px;
+  font-family: FjallaOne;
+  display: inline-block;
+}
+
+.bright a {
+  color: black;
+  text-decoration: none;
+  border: 2px solid black;
+  padding: 16px 24px;
+  font-family: FjallaOne;
+  display: inline-block;
+}
+
+.dark a:hover {
+  background-color: white;
+  color: black;
+}
+
+.dark a:hover ~ h3 {
+  color: white;
+  opacity: 0.5;
+}
+
+.bright a:hover {
+  background-color: black;
+  color: white;
+}
+
+.bright a:hover ~ h3 {
+  color: black;
+}
+
+.dark h3 {
+  text-align: end;
+  font-size: 165px;
+  font-family: FjallaOne;
+  color: #9e9e9e;
+  opacity: 0.2;
+}
+
+.bright h3 {
+  text-align: end;
+  font-size: 165px;
+  font-family: FjallaOne;
+  color: #666666;
+  opacity: 0.9;
+}
+
+article {
+  background-color: black;
+  min-height: 100vh;
+  min-width: 100%;
+  position: relative;
+}
+
+article h4 {
+  text-align: center;
+  color: white;
+  font-size: clamp(4vw, 180px, 10vw);
+  font-weight: 400;
+  font-family: WorksSans;
+  padding-top: 130px;
+  padding-bottom: 150px;
+}
+
+article p {
+  display: block;
+  width: 700px;
+  color: #666;
+  font-size: clamp(0.5vw, 22px, 2vw);
+  font-family: WorksSans;
+  line-height: 200%;
+  text-align: left;
+  position: absolute;
+  right: 8%;
+}
+
+article a {
+  color: #fff;
+  font-size: 60px;
+  font-family: WorksSans;
+  text-decoration: none;
+  position: absolute;
+  right: 20%;
+  bottom: 10%;
+}
+
+article a:hover {
+  text-decoration: underline;
+}
+footer {
+  height: 100vw;
+  width: 700px;
+  margin: auto;
+  text-align: center;
+}
+
+footer p {
+  font-size: 160px;
+  font-family: DidactGothic;
+  padding: 150px 0 150px 0;
+}
+footer p:not(figure p):hover {
+  text-decoration: underline;
+}
+
+.heart p {
+  font-size: 10px;
+  animation: beat 0.25s infinite alternate;
+  transform-origin: center;
+}
+@keyframes beat {
+  to {
+    transform: scale(1.4);
+  }
+}
